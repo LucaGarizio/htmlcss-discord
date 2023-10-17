@@ -11,26 +11,23 @@ body{
 }
 
 header{
-    min-height: 500px;
     background-image: url("../img/jumbo.png");
     background-position: center;
     background-size:cover;
     color: white;
-    margin-bottom: 40px;
 }
 
 /* nav bar */
 #nav-container{
     display: flex;
     justify-content: center;
-    height: 100px;
+    align-items: center;
+    height: 150px;
 }
 
 .nav-col{
     display: flex;
     flex-basis: 10%;
-    margin: 20px 0;
-  
 }
 
 .logo{
@@ -45,7 +42,7 @@ header{
     min-width: 350px;
 }
 
-a{ 
+.link a{ 
     text-decoration: none;
     margin: 0 25px;
     color: white;
@@ -73,26 +70,12 @@ a{
     justify-content: center;
 }
 
-#header-container-col, h1{
+h1{
     margin: 70px 0 40px 0;
 }
 
-#header-container-col, p{
-    margin-bottom: 30px;
-}
-
-button{
-    border-radius: 20px;
-    padding: 10px;
-}
-
-header-container, button{
-    margin: 0 10px;
-}
-
-header-container, button:last-child{
-    color: white;
-    background-color: #0f0f0f;
+#header-content-col p{
+    margin-bottom: 20px;
 }
 
 #header-content-col{
@@ -102,10 +85,6 @@ header-container, button:last-child{
 
 /* main */
 /* 1st & 3th section */
-.img-modifier{
-    width: 600px;
-}
-
 .section-container{
     display: flex;
     align-items: flex-start;
@@ -117,14 +96,8 @@ header-container, button:last-child{
     margin: 40px 0;
 }
 
-.col-sx{
-    /* margin-right: 50px; */
-    border: 1px solid black;
-}
-
 .col-dx{
     padding-top: 40px;
-    border: 1px solid black;
 }
 
 .col-dx h2{
@@ -139,7 +112,7 @@ header-container, button:last-child{
 
 /* 2nd section */
 .back-color{
-    background-color: darkgrey;  
+    background-color: lightgrey;  
 }
 
 .row-reverse{
@@ -151,55 +124,107 @@ header-container, button:last-child{
 .col-large{
     text-align: center;
     margin: 20px 0;
-    flex-basis: 70%;
-    /* DEBUG */
-    border: 1px solid black;
+}
+
+.col-large h2{
+    line-height: 35px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.col-large p{
+    line-height: 20px;
 }
 
 #background-img{
-    
+    background-image: url("../img/stars.svg");
+    width: 200px;
+    color: black;
 }
 
 /* footer section */
 .footer-back-color{
     background-color: #0f0f0f;
-    border-bottom: 1px solid darkgray;
+    border-bottom: 1px solid #3498DB;;
+}
+
+.col-large > button{
+    background-color: rgb(118, 159, 212);
+    color: white;
+    padding: 10px;
+    width: 150px;
+}
+.col-large, h4{
+     margin-bottom: 20px;
 }
 
 /* info section */
 #info-container{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     margin-bottom: 20px;
 }
 
 .footer-col{
-    flex-basis: 10%;
-    /* DEBUG */
-    height: 250px;
-    border: 1px solid black;
-    background-color: darkgray;
-    margin: 10px 0;
+    flex-basis: 13%;
+    border: 1px solid white;
 }
 
 .footer-col-large{
-    flex-basis: 30%;
+    flex-basis: 25%;
     background-color: darkcyan;
+    height: 200px;
+}
+
+/* footer first column content */
+.footer-col img{
+    width: 30px;
+}
+
+footer span{
+    color: white;
+}
+
+footer span::after{
+    content: "";
+}
+
+footer h4{
+    margin-top: 10px;
+    color: #3498DB;
+}
+
+footer ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer li{
+    margin-bottom: 7px;
+}
+
+/* footer second column content */
+h5{
+    margin-bottom: 10px;
+    color: #3498DB;
 }
 
 /* last footer section */
 #last-container{
     display: flex;
     justify-content: center;
-    height: 80px;
+    min-height: 100px;
 }
 
 .last-col{
     flex-basis: 35%;
     margin-top: 20px;
-    /* DEBUG */
-    background-color: limegreen;
 }
 
 #logo-footer{
@@ -208,9 +233,24 @@ header-container, button:last-child{
     padding-left: 5px;
 }
 
+/* button section */
+button{
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 10px;
+}
+
 #footer-button{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 5px;
 }
+
+footer button{
+    background-color: #3498DB;
+    width: 100px;
+    color: white;
+}
+
+
