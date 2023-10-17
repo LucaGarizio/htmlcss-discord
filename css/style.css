@@ -90,10 +90,11 @@ h1{
     align-items: flex-start;
     justify-content: center;
     gap: 5%;
+    padding: 50px 0 ;
 }
 
 .col-content{
-    margin: 40px 0;
+    margin: 100px 0;
 }
 
 .col-dx{
@@ -123,6 +124,7 @@ h1{
 /* 4th section */
 .col-large{
     text-align: center;
+    padding: 50px 0;
     margin: 20px 0;
 }
 
@@ -154,8 +156,9 @@ h1{
     padding: 10px;
     width: 150px;
 }
+
 .col-large, h4{
-     margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 /* info section */
@@ -164,17 +167,15 @@ h1{
     align-items: flex-start;
     justify-content: center;
     margin-bottom: 20px;
+    padding-top: 100px;
 }
 
 .footer-col{
-    flex-basis: 13%;
-    border: 1px solid white;
+    flex-basis: 15%;
 }
 
 .footer-col-large{
-    flex-basis: 25%;
-    background-color: darkcyan;
-    height: 200px;
+    flex-basis: 20%;
 }
 
 /* footer first column content */
@@ -184,10 +185,6 @@ h1{
 
 footer span{
     color: white;
-}
-
-footer span::after{
-    content: "";
 }
 
 footer h4{
@@ -210,8 +207,8 @@ footer li{
 }
 
 /* footer second column content */
-h5{
-    margin-bottom: 10px;
+footer h2{
+    margin: 10px 0 20px 0;
     color: #3498DB;
 }
 
@@ -219,7 +216,7 @@ h5{
 #last-container{
     display: flex;
     justify-content: center;
-    min-height: 100px;
+    min-height: 150px;
 }
 
 .last-col{
@@ -233,12 +230,21 @@ h5{
     padding-left: 5px;
 }
 
-/* button section */
+/* button style */
+#header-container #header-content-col button:last-child {
+  background-color: black;
+  color: white;
+  }
+
 button{
     border-radius: 20px;
     padding: 10px;
     font-size: 16px;
     margin: 10px 10px;
+}
+
+.col-large > button{
+    width: 200px;
 }
 
 #footer-button{
@@ -253,4 +259,18 @@ footer button{
     color: white;
 }
 
+/* icons style */
+.fa-solid.fa-angle-down{
+    color: white;
+}
+
+.icons{
+    margin-top: 20px;
+}
+
+.fa-brands{
+    font-size: 20px;
+    color: white;
+    padding-right: 15px;
+}
 
