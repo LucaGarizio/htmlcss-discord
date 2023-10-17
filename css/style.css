@@ -14,6 +14,7 @@ header{
     background-image: url('../img/jumbo.png');
     background-position: center;
     background-size:cover;
+    background-position-y: 5%;
     color: white;
 }
 
@@ -22,7 +23,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: 120px;
 }
 
 .nav-col{
@@ -80,7 +81,7 @@ h1{
 
 #header-content-col{
     flex-basis: 50%;
-    margin-bottom: 110px;
+    margin-bottom: 100px;
 }
 
 /* main */
@@ -113,7 +114,7 @@ h1{
 
 /* 2nd section */
 .back-color{
-    background-color: lightgrey;  
+    background-color: rgba(237, 228, 228, 0.897);  
 }
 
 .row-reverse{
@@ -165,7 +166,7 @@ h1{
     justify-content: center;
     margin-bottom: 20px;
     padding-top: 100px;
-    gap: 30px;
+    gap: 2%;
 }
 
 .footer-col{
