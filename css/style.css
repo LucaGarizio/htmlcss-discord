@@ -14,7 +14,7 @@ header{
     background-image: url('../img/jumbo.png');
     background-position: center;
     background-size:cover;
-    background-position-y: 5%;
+    background-position-y: 0%;
     color: white;
 }
 
@@ -23,29 +23,22 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 120px;
+    
 }
 
-.nav-col{
-    display: flex;
-}
-
-.logo{
-    justify-content: flex-end;
-    align-items: center;
-    padding-left: 5px;
-}
 
 .link{
-    flex-basis: 55%;
+    flex-basis: 50%;
     display: flex;
     justify-content: center;
     min-width: 350px;
+    height: 100px;
 }
 
 .link a{ 
     text-decoration: none;
-    margin: 0 25px;
+    margin: 0 20px;
+    padding: 0 15px;
     color: white;
  }
 
@@ -55,12 +48,6 @@ header{
     align-items: center;
     flex-wrap: wrap;
     list-style: none;
-}
-
-.login{
-    justify-content: flex-start;
-    align-items: center;
-    padding-right: 5px;
 }
 
 /* header-main-container */
@@ -76,6 +63,7 @@ h1{
 }
 
 #header-content-col p{
+    line-height: 30px;
     margin-bottom: 20px;
 }
 
@@ -109,7 +97,7 @@ h1{
 }
 
 .col-dx p{
-    line-height: 20px;
+    line-height: 25px;
 }
 
 /* 2nd section */
@@ -136,23 +124,23 @@ h1{
 }
 
 .col-large p{
-    line-height: 20px;
+    line-height: 25px;
 }
 
 #background-img{
     padding-bottom: 10px;
 }
+
 /* footer section */
 .footer-back-color{
-    background-color: #0f0f0f;
-    border-bottom: 1px solid #3498DB;;
+    background-color: #100f0f;
 }
 
-.col-large > button{
-    background-color: rgb(118, 159, 212);
-    color: white;
-    padding: 10px;
-    width: 150px;
+.border{
+    width: 70%;
+    display:block;
+    margin: 0 auto;
+    border-top: #3498DB 1px solid;
 }
 
 .col-large, h4{
@@ -164,14 +152,13 @@ h1{
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    margin-bottom: 20px;
-    padding-top: 100px;
+    /* margin-bottom: 20px; */
+    padding: 100px 0 30px 0;
     gap: 2%;
 }
 
 .footer-col{
-    flex-basis: 15%;
-    
+    flex-basis: 10%;
 }
 
 .footer-col-large{
@@ -231,19 +218,25 @@ footer h2{
 }
 
 /* button style */
+button{
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
 #header-container #header-content-col button:last-child {
   background-color: black;
   color: white;
   }
 
-button{
-    border-radius: 20px;
-    padding: 10px;
-    font-size: 16px;
+#header-content-col button{
     margin: 10px 10px;
 }
 
 .col-large > button{
+    background-color: rgb(118, 159, 212);
+    color: white;
+    padding: 10px;
     width: 200px;
 }
 
