@@ -11,10 +11,12 @@ body{
 }
 
 header{
+    min-height: 500px;
     background-image: url("../img/jumbo.png");
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     color: white;
+    margin-bottom: 40px;
 }
 
 /* nav bar */
@@ -63,17 +65,16 @@ a{
     padding-right: 5px;
 }
 
-
 /* header-main-container */
 #header-container{
-    /* margin: 70px 0 70px 0; */
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 #header-container-col, h1{
-    margin: 50px 0 30px 0;
+    margin: 70px 0 40px 0;
 }
 
 #header-container-col, p{
@@ -85,49 +86,60 @@ button{
     padding: 10px;
 }
 
-
 header-container, button{
     margin: 0 10px;
 }
 
+header-container, button:last-child{
+    color: white;
+    background-color: #0f0f0f;
+}
+
 #header-content-col{
     flex-basis: 50%;
-    margin-bottom: 100px;
+    margin-bottom: 110px;
 }
 
 /* main */
-
 /* 1st & 3th section */
+.img-modifier{
+    width: 600px;
+}
+
 .section-container{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    gap: 5%;
 }
 
 .col-content{
-    margin: 20px 0;
-    /* DEBUG */
-    height: 300px;
+    margin: 40px 0;
 }
 
-.col-small{
-    flex-basis: 25%;
-    /* DEBUG */ 
+.col-sx{
+    /* margin-right: 50px; */
     border: 1px solid black;
-    background-color: rgb(92, 74, 210);
-
 }
 
-.col-large{
-    flex-basis: 45%;
-    /* DEBUG */
-    background-color: gray;
+.col-dx{
+    padding-top: 40px;
     border: 1px solid black;
+}
+
+.col-dx h2{
+    line-height: 35px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.col-dx p{
+    line-height: 20px;
 }
 
 /* 2nd section */
 .back-color{
-    background-color: darkgrey;
+    background-color: darkgrey;  
 }
 
 .row-reverse{
@@ -136,13 +148,16 @@ header-container, button{
 }
 
 /* 4th section */
-.col-content-large{
+.col-large{
+    text-align: center;
     margin: 20px 0;
     flex-basis: 70%;
     /* DEBUG */
-    height: 350px;
-    background-color: darkgreen;
     border: 1px solid black;
+}
+
+#background-img{
+    
 }
 
 /* footer section */
@@ -198,8 +213,4 @@ header-container, button{
     justify-content: flex-end;
     align-items: center;
     padding-right: 5px;
-}
-
-button{
-    font-size: 17px;
 }
